@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html:has(#light-mode:checked) {
+  filter: grayscale(1);
+}
+
 img {
   width: 100%;
   display: block;
@@ -28,6 +32,11 @@ main {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #fff;
 }
 
 h1 {
